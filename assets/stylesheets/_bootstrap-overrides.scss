@@ -1,0 +1,80 @@
+// Bootstrap overrides for this template
+.text-primary {
+  color: $theme-primary !important;
+}
+
+.btn-primary {
+  font-weight: 700;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+}
+
+.btn-xl {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 3px;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+}
+
+.btn-lg {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+}
+
+.img-fluid {
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.container-fluid {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.products-bkg .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn-success {
+  @include heading-font;
+  font-weight: 700;
+}
+
+textarea {
+  width: 83%;
+  height: 50vh;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+textarea.excerpt {
+  height: 10vh;
+}
+
+.p-3 {
+  padding: 0 1rem 1rem 1rem !important;
+}
+
+.blog .list-group-item {
+  padding-left: 0px;
+  border-top-color: rgba(0, 0, 0, 0.125);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.list-unstyled {
+  padding-left: 40px;
+}

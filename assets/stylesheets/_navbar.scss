@@ -1,0 +1,167 @@
+// Styling for the navbar
+#mainNav {
+  background-color: $gray-darker;
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    // text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: $theme-primary;
+    @include heading-font;
+  }
+  .navbar-brand {
+    color: $theme-primary;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($theme-primary, 10%);
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: white;
+        @include sans-serif-font;
+        &.active,
+        &:hover {
+          color: $theme-primary;
+        }
+      }
+      .nav-link-dark {
+        font-size: 90%;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #000;
+        @include sans-serif-font;
+        &.active,
+        &:hover {
+          background-color: $theme-primary;
+        }
+      }
+    }
+  }
+}
+.logout {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  @include sans-serif-font;
+  &.active,
+  &:hover {
+    color: $theme-primary;
+  }
+  border: none;
+  background: none;
+}
+
+@media(min-width:992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 1em !important;
+        }
+      }
+    }
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $gray;
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+    }
+  }
+  .logout {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding: 1.1em 1em !important;
+    border: none;
+    background: none;
+  }
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+#navbar-responsive a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 340px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 3;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.split {
+  position: relative;
+  float: left;
+  top: -0.5rem;
+}
+
+.hello {
+  color: $gray;
+}
+
+.account {
+  color: #fff;
+}

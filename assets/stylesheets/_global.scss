@@ -1,0 +1,161 @@
+// Global styling for this template
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $theme-primary;
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($theme-primary, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.5rem;
+}
+
+h6 {
+  font-size: 0rem;
+}
+
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $theme-primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $theme-primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $theme-primary;
+}
+
+input.usernameInput {
+  width: 14rem;
+}
+
+input.passwordInput {
+  width: 10rem;
+}
+
+.photo-sm {
+  height: 200px;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+.padding-left-1 {
+  padding-left: 1rem;
+}
+
+.padding-right {
+  padding-right: 1.5rem;
+}
+
+.dropzone {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-width: 1px;
+  border-color: rgb(102, 102, 102);
+  border-style: dashed;
+  border-radius: 5px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.page {
+  background-color: #fff;
+  border-radius: .25rem;
+  padding: 1.5rem;
+}
+
+.float {
+  float: left;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

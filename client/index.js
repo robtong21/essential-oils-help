@@ -1,3 +1,5 @@
+'use strict'
+
 import './index.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -14,3 +16,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('app')
 )
+
